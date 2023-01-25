@@ -84,7 +84,7 @@ public class Main {
         int weightEverydayMax = 500;
         double maxDaysCount = (double) weightEveryday/weightEverydayMin;
         double minDaysCount = (double) weightEveryday/weightEverydayMax;
-        double lossWeightPerDayAverage = (weightEverydayMin+weightEverydayMax)/ 20;
+        double lossWeightPerDayAverage = (weightEverydayMin+weightEverydayMax) / 2D;
         double averageDayCounts = weightEveryday/lossWeightPerDayAverage;
         System.out.println("Минимальное количество дней для похудения " + minDaysCount);
         System.out.println("Максимальное количество дней для похудения " + maxDaysCount);
