@@ -31,7 +31,7 @@ public class Main {
         System.out.println (b);
         short c = 27897;
         System.out.println (c);
-        long d = 987678965;
+        long d = 987_678_965_549L;
         System.out.println (d);
         float e = 2.786f;
         System.out.println (e);
