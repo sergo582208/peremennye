@@ -51,13 +51,13 @@ public class Main {
     public static void task4() {
         int quantityBottles = 16;
         int time = 2;
-        int quantityBottles20 = quantityBottles * 20;
+        int quantityBottles20 = quantityBottles * 10;
         System.out.println("За 20 минут машина произвела " + quantityBottles20 + " штук бутылок");
-        int quantityBottles1440 = quantityBottles * 1440;
+        int quantityBottles1440 = quantityBottles * 720;
         System.out.println("За сутки минут машина произвела " + quantityBottles1440 + " штук бутылок");
-        int quantityBottles4320 = quantityBottles * 4320;
+        int quantityBottles4320 = quantityBottles * 2160;
         System.out.println("За 3 дня машина произвела " + quantityBottles4320 + " штук бутылок");
-        int quantityBottles44640 = quantityBottles * 44640;
+        int quantityBottles44640 = quantityBottles * 22320;
         System.out.println("За месяц машина произвела " + quantityBottles44640 + " штук бутылок");
     }
     public static void task5() {
@@ -79,11 +79,17 @@ public class Main {
         System.out.println("Масса напитка " + weightKg + " кг");
     }
     public static void task7() {
-        int weightEveryday = 7000;
-        int weightEveryday250 = weightEveryday/250;
-        System.out.println("Количество дней " + weightEveryday250);
-        int weightEveryday500 = weightEveryday/500;
-        System.out.println("Количество дней " + weightEveryday500);
+        int weightEveryday = 7_000;
+        int weightEverydayMin = 250;
+        int weightEverydayMax = 500;
+        double maxDaysCount = (double) weightEveryday/weightEverydayMin;
+        double minDaysCount = (double) weightEveryday/weightEverydayMax;
+        double lossWeightPerDayAverage = (weightEverydayMin+weightEverydayMax)/ 20;
+        double averageDayCounts = weightEveryday/lossWeightPerDayAverage;
+        System.out.println("Минимальное количество дней для похудения " + minDaysCount);
+        System.out.println("Максимальное количество дней для похудения " + maxDaysCount);
+        System.out.println("Среднее количество дней для похудения " + averageDayCounts);
+
     }
     public static void task8() {
         int Maria = 67760;
